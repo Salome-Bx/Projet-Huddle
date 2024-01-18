@@ -15,11 +15,16 @@ body {
 
 .blocLogo,
 .blocInfos {
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .reseaux {
-  margin-right: 5%;
+  margin-right: 8%;
+}
+
+.coordonnees,
+.menuFooter {
+  padding-right: 8%;
 }
 
 .blocInfos {
@@ -35,7 +40,6 @@ body {
 
 .coordonnees {
   width: 30%;
-  padding-right: 8%;
 }
 
 .coordonnees li {
