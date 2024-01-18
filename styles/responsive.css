@@ -1,2 +1,36 @@
 @media only screen and (max-width: 375px) {
+  .footer {
+    height: 500px;
+  }
+
+  .blocInfos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coordonnees {
+    width: 100%;
+  }
+
+  .menuFooter {
+    width: 100%;
+    display: flex;
+  }
+  .reseaux {
+    width: 100%;
+  }
+
+  .icones {
+    margin: auto;
+  }
+
+  .copyright {
+    padding-top: 5%;
+    margin: auto;
+  }
+
+  .blocLogo,
+  .blocInfos {
+    margin-left: 5%;
+  }
 }
