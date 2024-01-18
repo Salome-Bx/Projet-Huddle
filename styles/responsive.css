@@ -1,6 +1,12 @@
 /* ---------- RESPONSIVE MOBILE ---------- */
 
 @media only screen and (max-width: 375px) {
+  h1,
+  h2 {
+    word-spacing: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+  }
   .header {
     padding: 1% 1%;
     align-items: center;
@@ -23,14 +29,17 @@
   .headerBas {
     flex-direction: column;
     align-items: center;
+    padding: 0 6%;
+    width: auto;
   }
 
   .headerGauche {
-    width: 100%;
-    padding-right: 0%;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
   }
 
   .headerDroit {
