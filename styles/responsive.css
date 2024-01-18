@@ -1,0 +1,26 @@
+/* ---------- RESPONSIVE MOBILE ---------- */
+
+@media only screen and (max-width: 375px) {
+  .header {
+    padding: 1% 1%;
+  }
+
+  .logoHeader {
+    width: 50%;
+    height: fit-content;
+  }
+
+  .headerBas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerGauche {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .headerDroit {
+    width: 100%;
+  }
+}
