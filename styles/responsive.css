@@ -1,6 +1,8 @@
 @media only screen and (max-width: 375px) {
+  /* ------------- footer ------------*/
+
   .footer {
-    height: 500px;
+    height: 590px;
   }
 
   .blocInfos {
@@ -8,16 +10,28 @@
     flex-direction: column;
   }
 
-  .coordonnees {
-    width: 100%;
+  .coordonnees,
+  .menuFooter,
+  .reseaux {
+    width: auto;
+  }
+
+  .coordonnees li {
+    margin-top: 5%;
   }
 
   .menuFooter {
-    width: 100%;
-    display: flex;
+    display: block;
+    margin-top: 10%;
   }
+
   .reseaux {
-    width: 100%;
+    margin-top: 10%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
   }
 
   .icones {
