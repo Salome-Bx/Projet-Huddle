@@ -3,10 +3,20 @@
 @media only screen and (max-width: 375px) {
   .header {
     padding: 1% 1%;
+    align-items: center;
+    background-image: url(../images/bg_hero_mobile.svg);
+  }
+
+  .headerHaut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5% 20% 5%;
+    width: auto;
   }
 
   .logoHeader {
-    width: 50%;
+    width: 40%;
     height: fit-content;
   }
 
@@ -18,6 +28,9 @@
   .headerGauche {
     width: 100%;
     padding-right: 0%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .headerDroit {
