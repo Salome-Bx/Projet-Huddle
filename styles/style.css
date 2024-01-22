@@ -11,6 +11,8 @@ body {
   background-color: hsl(192, 100%, 9%);
   width: 100%;
   padding: 10% 0 2% 0;
+  bottom: 0;
+  position: fixed;
 }
 
 .blocLogo,
@@ -50,6 +52,7 @@ body {
 .copyright {
   font-size: 12px;
   padding-top: 25%;
+  color: hsl(193, 100%, 96%);
 }
 
 .menuFooter {
@@ -113,44 +116,6 @@ body {
 
 .icones {
   display: flex;
-}
-
-.fa-facebook-f {
-  position: relative;
-  top: -2px;
-  left: 3px;
-  border: none !important;
-}
-
-.fa-instagram {
-  position: relative;
-  top: -2px;
-  left: 1px;
-  border: none !important;
-}
-
-.fa-twitter {
-  position: relative;
-  top: -2px;
-  left: 1px;
-  border: none !important;
-}
-
-.cercle {
-  border-radius: 99px;
-  border: 1px solid white;
-  padding: 6px;
-  height: 17px;
-  width: 17px;
-  margin-right: 10px;
-}
-
-.cercle:hover,
-.fa-twitter:hover,
-.fa-instagram:hover,
-.fa-facebook-f:hover {
-  border: 1px solid hsl(322, 100%, 66%);
-  color: hsl(322, 100%, 66%);
 }
 
 h1,
@@ -291,4 +256,30 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   box-shadow: 2px 2px 10px lightgray;
+}
+
+.logosReseaux {
+  list-style: none;
+  padding-left: 0;
+}
+
+.logosReseaux li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.imgFacebook,
+.imgTwitter,
+.imgInstagram {
+  width: 25px;
+  height: fit-content;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(40deg)
+    brightness(107%) contrast(102%);
+}
+
+.imgFacebook:hover,
+.imgTwitter:hover,
+.imgInstagram:hover {
+  filter: invert(13%) sepia(92%) saturate(6566%) hue-rotate(314deg)
+    brightness(97%) contrast(103%);
 }
