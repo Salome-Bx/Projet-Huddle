@@ -1,6 +1,6 @@
 /* ---------- RESPONSIVE MOBILE ---------- */
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 600px) {
   h1,
   h2 {
     word-spacing: 0px;
@@ -146,9 +146,7 @@
   .logosReseaux {
     text-align: center;
   }
-}
 
-@media only screen and (min-width: 376px) and (max-width: 600px) {
   .blocInfos {
     display: flex;
     flex-direction: column;

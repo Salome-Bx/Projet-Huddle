@@ -145,12 +145,10 @@ body {
 /* -----------------footer------------------*/
 
 .footer {
-  height: 250px;
   color: hsl(193, 100%, 96%);
   background-color: hsl(192, 100%, 9%);
   width: 100%;
   padding: 10% 0 2% 0;
-  bottom: 0;
 }
 
 .blocLogo,
