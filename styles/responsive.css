@@ -1,3 +1,4 @@
+
 /* ---------- RESPONSIVE MOBILE ---------- */
 
 @media only screen and (min-width: 375px) {
@@ -96,5 +97,119 @@
   .h2Button {
     text-align: center;
     width: 110%;
+
+  }
+  
+
+  /* ------------- footer ------------*/
+
+  .footer {
+    height: 590px;
+  }
+
+  .blocInfos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coordonnees,
+  .menuFooter,
+  .reseaux {
+    width: auto;
+  }
+
+  .coordonnees li {
+    margin-top: 5%;
+  }
+
+  .menuFooter {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .reseaux {
+    margin-top: 10%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icones {
+    margin: auto;
+  }
+
+  .copyright {
+    padding-top: 5%;
+    margin: auto;
+  }
+
+  .blocLogo,
+  .blocInfos {
+    margin-left: 5%;
+  }
+
+  .logosReseaux {
+    text-align: center;
   }
 }
+
+@media only screen and (min-width: 376px) and (max-width: 600px) {
+  .footer {
+    height: 590px;
+  }
+
+  .blocInfos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coordonnees,
+  .menuFooter,
+  .reseaux {
+    width: auto;
+  }
+
+  .coordonnees li {
+    margin-top: 5%;
+  }
+
+  .menuFooter {
+    display: block;
+    margin-top: 10%;
+  }
+
+  .reseaux {
+    margin-top: 10%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icones {
+    margin: auto;
+  }
+
+  .copyright {
+    padding-top: 5%;
+    margin: auto;
+  }
+
+  .blocLogo,
+  .blocInfos {
+    margin-left: 5%;
+  }
+
+  .logosReseaux {
+    text-align: center;
+  
+}
+  
+}
+
+
+
+
