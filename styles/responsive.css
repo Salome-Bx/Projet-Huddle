@@ -1,4 +1,106 @@
+
+/* ---------- RESPONSIVE MOBILE ---------- */
+
 @media only screen and (min-width: 375px) {
+  h1,
+  h2 {
+    word-spacing: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 1% 1%;
+    align-items: center;
+    background-image: url(../images/bg_hero_mobile.svg);
+  }
+
+  .headerHaut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5% 20% 5%;
+    width: auto;
+  }
+
+  .logoHeader {
+    width: 40%;
+    height: fit-content;
+  }
+
+  .headerBas {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6%;
+    width: auto;
+    margin-bottom: 10%;
+  }
+
+  .headerBas .boutonRose {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+  .headerGauche {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .headerDroit {
+    width: 100%;
+  }
+
+  .bloc {
+    flex-direction: column-reverse;
+    height: 80vh;
+    margin-bottom: 10%;
+  }
+
+  .blocReverse {
+    flex-direction: column;
+    height: 80vh;
+    margin-bottom: 10%;
+  }
+
+  .textBloc,
+  .textBlocReverse {
+    width: 80%;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .imgBloc,
+  .imgBlocReverse {
+    width: 80%;
+    padding-left: 0;
+  }
+
+  .blocButton {
+    width: 110%;
+    align-items: center;
+    margin-top: 30%;
+    margin-bottom: -15%;
+    padding-left: -4%;
+    padding-right: -4%;
+  }
+
+  .h2Button {
+    text-align: center;
+    width: 110%;
+
+  }
+  
+
   /* ------------- footer ------------*/
 
   .footer {
@@ -103,5 +205,11 @@
 
   .logosReseaux {
     text-align: center;
-  }
+  
 }
+  
+}
+
+
+
+
