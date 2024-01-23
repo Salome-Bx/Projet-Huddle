@@ -173,6 +173,12 @@ p {
   padding: 10% 0 2% 0;
 }
 
+.logoHuddleFooter {
+  filter: grayscale(1) brightness(10);
+  width: 150px;
+  margin-bottom: 3%;
+}
+
 .blocLogo,
 .blocInfos {
   margin-left: 8%;
