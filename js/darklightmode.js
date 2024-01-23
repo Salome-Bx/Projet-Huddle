@@ -1,17 +1,41 @@
 let checkboxValue = "on";
-let checkbox = document.querySelector(".checkbox");
+let checkbox = document.querySelector("#checkbox");
+let body = document.body;
 checkbox.addEventListener("click", checkValue);
-let translated = document.querySelector(".translated");
-let bgColor = document.querySelector(".bgColor");
+let header = document.querySelector(".header");
+let titles = document.querySelectorAll("h1, h2, p");
+let blocs = document.querySelectorAll(".bloc, .blocReverse, .blocButton");
+let shadow = document.querySelectorAll(".boutonRose, .boutonTry");
+let logo = document.querySelector(".logoHeader");
 
 function checkValue() {
-  if (checkboxValue === "on") {
-    translated.innerText = "Je suis en français";
-    checkboxValue = "off";
-    bgColor.id = "lightMode";
-  } else {
-    translated.innerText = "And also in english";
+  if (checkboxValue === "off") {
     checkboxValue = "on";
-    bgColor.id = "darkMode";
+    body.classList.remove("dark");
+    header.classList.remove("darkHeader");
+    titles.forEach((element) => {
+      element.classList.remove("darkH");
+    });
+    blocs.forEach((element) => {
+      element.classList.remove("darkBloc");
+    });
+    shadow.forEach((element) => {
+      element.classList.remove("darkButton");
+    });
+    logo.classList.remove("darkLogo");
+  } else {
+    checkboxValue = "off";
+    body.classList.add("dark");
+    header.classList.add("darkHeader");
+    titles.forEach((element) => {
+      element.classList.add("darkH");
+    });
+    blocs.forEach((element) => {
+      element.classList.add("darkBloc");
+    });
+    shadow.forEach((element) => {
+      element.classList.add("darkButton");
+    });
+    logo.classList.add("darkLogo");
   }
 }
