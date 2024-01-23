@@ -178,26 +178,12 @@ p {
   margin-left: 8%;
 }
 
-.reseaux {
-  margin-right: 8%;
-}
-
 .coordonnees,
 .menuFooter {
   padding-right: 8%;
 }
 
-.blocInfos {
-  display: flex;
-  justify-content: row;
-}
-
-.logoHuddleFooter {
-  filter: grayscale(1) brightness(10);
-  width: 150px;
-  margin-bottom: 3%;
-}
-
+/* Bloc Coordonnées */
 .coordonnees {
   width: 30%;
 }
@@ -207,12 +193,7 @@ p {
   padding-bottom: 6%;
 }
 
-.copyright {
-  font-size: 12px;
-  padding-top: 25%;
-  color: hsl(193, 100%, 96%);
-}
-
+/* Bloc Menu Footer */
 .menuFooter {
   width: 30%;
   display: flex;
@@ -235,13 +216,13 @@ p {
   text-decoration: underline;
 }
 
-.reseaux {
-  width: 30%;
+/* Bloc Infos */
+.blocInfos {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: row;
 }
 
+/* Icones Bloc Infos */
 .adresse:before {
   content: "";
   background-image: url(../images/icon_location.svg);
@@ -276,6 +257,16 @@ p {
   display: flex;
 }
 
+/* Bloc Logos Réseaux */
+
+.reseaux {
+  margin-right: 8%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .logosReseaux {
   list-style: none;
   padding-left: 0;
@@ -286,6 +277,7 @@ p {
   padding-right: 10px;
 }
 
+/* Bloc logos réseaux */
 .imgFacebook,
 .imgTwitter,
 .imgInstagram {
@@ -300,4 +292,10 @@ p {
 .imgInstagram:hover {
   filter: invert(13%) sepia(92%) saturate(6566%) hue-rotate(314deg)
     brightness(97%) contrast(103%);
+}
+
+.copyright {
+  font-size: 12px;
+  padding-top: 25%;
+  color: hsl(193, 100%, 96%);
 }
