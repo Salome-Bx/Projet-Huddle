@@ -391,3 +391,122 @@ input[type="checkbox"]:checked + label {
 input[type="checkbox"] {
   visibility: hidden;
 }
+
+/* ----------------- SHINY MODE ----------------- */
+
+.shinyMode {
+  animation: changeColor 0.5s ease infinite;
+  background: linear-gradient(
+    -45deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 400% 400%;
+}
+
+.shinyBody {
+  animation: bodyAnimation 15s ease-out infinite;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 400% 400%;
+}
+
+.shinyTitles {
+  animation: changeColorTitle 0.75s ease-out infinite;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ffa500,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shinyHeaderBg {
+  background-image: url(../images/danny-danny-go.gif);
+  background-color: hsl(193, 100%, 96%);
+  padding: 2% 5% 5% 5%;
+  transition: background-color 600ms;
+  background-size: cover;
+}
+
+.shinyBloc {
+  background-image: url(../images/pride-rainbow.gif);
+  background-size: cover;
+}
+
+.shinyFooter {
+  background-image: url(../images/goat-unicorn.gif);
+  background-size: cover;
+}
+
+.shinyLogo {
+  margin-top: -4%;
+  margin-bottom: -4%;
+}
+
+.shinyHeaderImg {
+  width: 70%;
+}
+
+.shinyIcons {
+  filter: none;
+}
+@keyframes changeColor {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes changeColorTitle {
+  0% {
+    background-size: 0% 40%;
+  }
+
+  50% {
+    background-size: 100% 40%;
+  }
+
+  100% {
+    background-size: 0% 100%;
+  }
+}
+@keyframes bodyAnimation {
+  0% {
+    background-size: 0% 40%;
+  }
+
+  50% {
+    background-size: 100% 40%;
+  }
+
+  100% {
+    background-size: 0% 100%;
+  }
+}
