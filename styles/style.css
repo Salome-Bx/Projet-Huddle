@@ -206,13 +206,15 @@ p {
   padding: 10% 0 2% 0;
 }
 
+.logoHuddleFooter {
+  filter: grayscale(1) brightness(10);
+  width: 150px;
+  margin-bottom: 3%;
+}
+
 .blocLogo,
 .blocInfos {
   margin-left: 8%;
-}
-
-.reseaux {
-  margin-right: 8%;
 }
 
 .coordonnees,
@@ -220,17 +222,7 @@ p {
   padding-right: 8%;
 }
 
-.blocInfos {
-  display: flex;
-  justify-content: row;
-}
-
-.logoHuddleFooter {
-  filter: grayscale(1) brightness(10);
-  width: 150px;
-  margin-bottom: 3%;
-}
-
+/* Bloc Coordonnées */
 .coordonnees {
   width: 30%;
 }
@@ -240,12 +232,7 @@ p {
   padding-bottom: 6%;
 }
 
-.copyright {
-  font-size: 12px;
-  padding-top: 25%;
-  color: hsl(193, 100%, 96%);
-}
-
+/* Bloc Menu Footer */
 .menuFooter {
   width: 30%;
   display: flex;
@@ -268,13 +255,13 @@ p {
   text-decoration: underline;
 }
 
-.reseaux {
-  width: 30%;
+/* Bloc Infos */
+.blocInfos {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: row;
 }
 
+/* Icones Bloc Infos */
 .adresse:before {
   content: "";
   background-image: url(../images/icon_location.svg);
@@ -309,6 +296,16 @@ p {
   display: flex;
 }
 
+/* Bloc Logos Réseaux */
+
+.reseaux {
+  margin-right: 8%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .logosReseaux {
   list-style: none;
   padding-left: 0;
@@ -319,6 +316,7 @@ p {
   padding-right: 10px;
 }
 
+/* Bloc logos réseaux */
 .imgFacebook,
 .imgTwitter,
 .imgInstagram {
@@ -333,6 +331,12 @@ p {
 .imgInstagram:hover {
   filter: invert(13%) sepia(92%) saturate(6566%) hue-rotate(314deg)
     brightness(97%) contrast(103%);
+}
+
+.copyright {
+  font-size: 12px;
+  padding-top: 25%;
+  color: hsl(193, 100%, 96%);
 }
 
 /* ---------- DARK MODE ---------- */
@@ -368,6 +372,7 @@ p {
   background: gray;
   position: relative;
   border-radius: 3px;
+  margin-top: 7px;
 }
 
 label {
@@ -509,4 +514,58 @@ input[type="checkbox"] {
   100% {
     background-size: 0% 100%;
   }
+
+/* ---------- LISTE LANGUE ---------- */
+#langueSwitch {
+  border: none;
+  background-color: white;
+  margin-left: 30px;
+}
+
+select {
+  border-radius: 5px;
+}
+
+/* ---------- COOKIE ---------- */
+
+.cookieContainer {
+  background-color: lightgray;
+  color: white;
+  position: fixed;
+  top: 10vh;
+  border-radius: 12px;
+  display: flex;
+  padding: 3%;
+  margin: 20%;
+  align-items: center;
+  overflow: hidden;
+  border: 10px solid #b3b3b3;
+}
+
+.cookie {
+  overflow: visible;
+  width: 100px;
+}
+
+.encartCookie {
+  padding-left: 7%;
+}
+
+.boutonCookie,
+.boutonCookie2 {
+  border-style: none;
+  padding: 0.5rem 1rem;
+  color: grey;
+  border-radius: 12px;
+}
+
+.boutonCookie:hover,
+.boutonCookie2:hover {
+  background-color: #f7f7f7;
+  color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+.hidden {
+  display: none !important;
+
 }

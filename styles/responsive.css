@@ -208,4 +208,9 @@
   .logosReseaux {
     text-align: center;
   }
+
+  /* ---------- COOKIE ---------- */
+  .cookie {
+    width: 80px;
+  }
 }
