@@ -22,12 +22,14 @@
     align-items: center;
     background-image: url(../images/bg_hero_mobile.svg);
   }
-
+  .menu {
+    padding: 0% 2%;
+  }
   .headerHaut {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5% 20% 5%;
+    padding: 5% 5% 0% 5%;
     width: auto;
   }
 
@@ -212,5 +214,21 @@
   /* ---------- COOKIE ---------- */
   .cookie {
     width: 80px;
+  }
+
+  /* ---------- SHINY MODE ----------*/
+  .shinyHeaderBg {
+    background-image: url(../images/danny-danny-go.gif);
+    background-size: cover;
+    background-position: center;
+  }
+  .shinyFooter {
+    background-image: url(../images/goat-unicorn.gif);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .shinyHeaderImg {
+    width: 100%;
   }
 }
