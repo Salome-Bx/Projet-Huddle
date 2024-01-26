@@ -514,7 +514,7 @@ input[type="checkbox"] {
   100% {
     background-size: 0% 100%;
   }
-
+}
 /* ---------- LISTE LANGUE ---------- */
 #langueSwitch {
   border: none;
@@ -567,5 +567,4 @@ select {
 }
 .hidden {
   display: none !important;
-
 }
