@@ -1,6 +1,6 @@
 /* ---------- RESPONSIVE MOBILE ---------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   /* ---------- BODY ---------- */
 
   h1,
@@ -207,5 +207,10 @@
 
   .logosReseaux {
     text-align: center;
+  }
+
+  /* ---------- COOKIE ---------- */
+  .cookie {
+    width: 80px;
   }
 }
