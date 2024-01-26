@@ -39,3 +39,20 @@ function checkValue() {
     logo.classList.add("darkLogo");
   }
 }
+
+function changerLangue() {
+  var selectElement = document.getElementById("langSelector");
+  var langueSelectionnee = selectElement.value;
+
+  // Masquer tous les éléments de texte
+  var textes = document.getElementsByClassName("texte");
+  for (var i = 0; i < textes.length; i++) {
+    textes[i].style.display = "none";
+  }
+
+  // Afficher uniquement le texte correspondant à la langue sélectionnée
+  var texteLangue = document.getElementsByClassName(langueSelectionnee);
+  for (var i = 0; i < texteLangue.length; i++) {
+    texteLangue[i].style.display = "block";
+  }
+}

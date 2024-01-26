@@ -9,6 +9,12 @@
       src="https://kit.fontawesome.com/ffa8279fb3.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/Yolo-entertainment.png"
+      id="favicon"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
@@ -42,21 +48,27 @@
         </div>
         <!----------- MENU ----------->
         <div class="menu">
-          <img src="./images/logo.svg" alt="" class="logoHeader" />
-          <button class="boutonTry">Try It Free</button>
+          <img
+            src="./images/logo.svg"
+            alt=""
+            class="logoHeader"
+            id="logoHeader"
+          />
+          <button class="boutonTry" id="bouton0">Try It Free</button>
         </div>
       </div>
       <div class="headerBas">
         <div class="headerGauche">
           <h1 class="titreH1">Build The Community<br>Your Fans Will Love</h1>
           <p class="texteIntro"> Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your ursers as you engage in genuine discussion.</p>
-          <button class="boutonRose">Get Started For Free</button>
+          <button class="boutonRose" id="bouton1" onclick="shinyMode()">Get Started For Free</button>
         </div>
         <div class="headerDroit">
           <img
             src="./images/illustration_mockups.svg"
             alt="image illustration application"
             class="imgHeader"
+            id="imgHeader"
           />
         </div>
       </div>
@@ -67,11 +79,11 @@
           <h2 class="H2PremierBloc">Grow Together</h2>
           <p class="textePremierBloc">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
         </div>
-
         <div class="imgBloc">
           <img
             src="./images/illustration_grow_together.svg"
             alt="image illustration grow together"
+            id="img1"
           />
         </div>
       </div>
@@ -80,6 +92,7 @@
           <img
             src="./images/illustration_flowing_conversation.svg"
             alt="image illustration Flowing Conversations"
+            id="img2"
           />
         </div>
         <div class="textBlocReverse">
@@ -89,6 +102,16 @@
       </div>
       <div class="bloc">
         <div class="textBloc">
+
+          <h2 class="rainbowEvent">Your Users</h2>
+          <p>
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+        <div class="imgBloc">
+          <img src="./images/illustration_your_users.svg" alt="" id="img3" />
           <h2 class="H2TroisiemeBloc">Your Users</h2>
           <p class="texteTroisiemeBloc">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
         </div>
@@ -96,15 +119,13 @@
           <img
             src="./images/illustration_your_users.svg"
             alt="Flowing Your Users"
-          />
+            />
         </div>
       </div>
       <div class="blocButton">
-        <h2 class="h2Button">Ready To Build Your Community?</h2>
+        <h2 class="h2Button, rainbowEvent">Ready To Build Your Community?</h2>
         <button class="boutonRose">Get Started For Free</button>
       </div>
-
-
 <!----------- POP UP COOKIE ----------->
 <div class="cookieContainer">
       <!--Cookie-->
@@ -333,7 +354,6 @@
           </clipPath>
         </defs>
       </svg>
-
       <div class="encartCookie">
         <h2 class="titreCookie texteAnimation">Cookie Policy</h2>
         <p class="texteCookie texteAnimation">
@@ -342,10 +362,8 @@
         </p>
         <button class="boutonCookie texteAnimation">I got it</button>
         <button class="boutonCookie2 texteAnimation .gif ">Nop</button>
-        
       </div>
     </div>
-
     </main>
     <!----------- FOOTER ----------->
     <footer class="footer">
@@ -354,6 +372,7 @@
           src="./images/logo.svg"
           alt="logo Huddle"
           class="logoHuddleFooter"
+          id="logoHuddleFooter"
         />
       </div>
       <div class="blocInfos">
@@ -384,6 +403,7 @@
                   class="imgFacebook"
                   src="./images/facebook.svg"
                   alt="logo Facebook"
+                  id="imgFacebook"
                 /></li
             ></a>
             <a href="https://www.twitter.com" target="blank"
@@ -392,6 +412,7 @@
                   class="imgTwitter"
                   src="./images/twitter.svg"
                   alt="logo Twitter"
+                  id="imgTwitter"
                 /></li
             ></a>
             <a href="https://www.instagram.com" target="blank"
@@ -400,14 +421,15 @@
                   class="imgInstagram"
                   src="./images/Instagram.svg"
                   alt="logo Instagram"
+                  id="imgInstagram"
                 /></li
             ></a>
           </ul>
           <p class="copyright">© Copyright 2018 Huddle. All rights reserved.</p>
         </div>
-        
       </div>
     </footer>
+    <script src="./js/shinyMode.js"></script>
   </body>
   <script src="./js/darklightmode.js"></script>
   <script src="./js/traduction.js"></script>
