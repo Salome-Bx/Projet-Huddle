@@ -553,7 +553,8 @@ select {
 }
 
 .boutonCookie,
-.boutonCookie2 {
+.boutonCookie2,
+.boutonCookiePlease {
   border-style: none;
   padding: 0.5rem 1rem;
   color: grey;
@@ -561,11 +562,18 @@ select {
 }
 
 .boutonCookie:hover,
-.boutonCookie2:hover {
+.boutonCookie2:hover,
+.boutonCookiePlease:hover {
   background-color: #f7f7f7;
   color: hsl(322, 100%, 66%);
   cursor: pointer;
 }
+
 .hidden {
   display: none !important;
+}
+
+.gifComeOn {
+  width: 150px;
+  height: 160px;
 }

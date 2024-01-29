@@ -216,6 +216,29 @@
     width: 80px;
   }
 
+  .gifComeOn {
+    width: 80px;
+    height: 90px;
+  }
+
+  .titreCookie {
+    font-size: 1em;
+  }
+
+  .texteCookie {
+    font-size: 0.9em;
+  }
+
+  .boutonCookie,
+  .boutonCookie2,
+  .boutonCookiePlease {
+    font-size: 0.9em;
+  }
+
+  .cookieContainer {
+    margin: 5%;
+  }
+
   /* ---------- SHINY MODE ----------*/
   .shinyHeaderBg {
     background-image: url(../images/danny-danny-go.gif);

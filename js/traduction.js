@@ -1,3 +1,5 @@
+let chargementLangue = window.localStorage.getItem("chargementLangue");
+
 const traductions = {
   langues: {
     EN: {
@@ -136,7 +138,58 @@ function traduction() {
       titreCookie.innerHTML = traductions.langues.FR.titreCookie;
       texteCookie.innerHTML = traductions.langues.FR.texteCookie;
       boutonCookie2.innerHTML = traductions.langues.FR.boutonCookie;
-
       break;
   }
+}
+
+//chargement du choix de la traduction au clic
+if (chargementLangue === "fr") {
+  window.localStorage.getItem("chargementLangue", "fr");
+  titreH1.innerHTML = traductions.langues.EN.titreH1;
+  texteIntro.innerHTML = traductions.langues.EN.texteIntro;
+  boutonRose.innerHTML = traductions.langues.EN.boutonRose;
+  boutonTry.innerHTML = traductions.langues.EN.boutonTry;
+  H2PremierBloc.innerHTML = traductions.langues.EN.H2PremierBloc;
+  textePremierBloc.innerHTML = traductions.langues.EN.textePremierBloc;
+  H2DeuxiemeBloc.innerHTML = traductions.langues.EN.H2DeuxiemeBloc;
+  texteDeuxiemeBloc.innerHTML = traductions.langues.EN.texteDeuxiemeBloc;
+  H2TroisiemeBloc.innerHTML = traductions.langues.EN.H2TroisiemeBloc;
+  texteTroisiemeBloc.innerHTML = traductions.langues.EN.texteTroisiemeBloc;
+  h2Button.innerHTML = traductions.langues.EN.h2Button;
+  boutonRose2.innerHTML = traductions.langues.EN.boutonRose;
+  element1.innerHTML = traductions.langues.EN.element1;
+  element2.innerHTML = traductions.langues.EN.element2;
+  element3.innerHTML = traductions.langues.EN.element3;
+  element4.innerHTML = traductions.langues.EN.element4;
+  element5.innerHTML = traductions.langues.EN.element5;
+  element6.innerHTML = traductions.langues.EN.element6;
+  copyright.innerHTML = traductions.langues.EN.copyright;
+  titreCookie.innerHTML = traductions.langues.EN.titreCookie;
+  texteCookie.innerHTML = traductions.langues.EN.texteCookie;
+  boutonCookie2.innerHTML = traductions.langues.EN.boutonCookie;
+  window.localStorage.setItem("choixLangue", "en");
+} else {
+  window.localStorage.getItem("chargementLangue", "en");
+  titreH1.innerHTML = traductions.langues.FR.titreH1;
+  texteIntro.innerHTML = traductions.langues.FR.texteIntro;
+  boutonRose.innerHTML = traductions.langues.FR.boutonRose;
+  boutonTry.innerHTML = traductions.langues.FR.boutonTry;
+  H2PremierBloc.innerHTML = traductions.langues.FR.H2PremierBloc;
+  textePremierBloc.innerHTML = traductions.langues.FR.textePremierBloc;
+  H2DeuxiemeBloc.innerHTML = traductions.langues.FR.H2DeuxiemeBloc;
+  texteDeuxiemeBloc.innerHTML = traductions.langues.FR.texteDeuxiemeBloc;
+  H2TroisiemeBloc.innerHTML = traductions.langues.FR.H2TroisiemeBloc;
+  texteTroisiemeBloc.innerHTML = traductions.langues.FR.texteTroisiemeBloc;
+  h2Button.innerHTML = traductions.langues.FR.h2Button;
+  boutonRose2.innerHTML = traductions.langues.FR.boutonRose;
+  element1.innerHTML = traductions.langues.FR.element1;
+  element2.innerHTML = traductions.langues.FR.element2;
+  element3.innerHTML = traductions.langues.FR.element3;
+  element4.innerHTML = traductions.langues.FR.element4;
+  element5.innerHTML = traductions.langues.FR.element5;
+  element6.innerHTML = traductions.langues.FR.element6;
+  copyright.innerHTML = traductions.langues.FR.copyright;
+  titreCookie.innerHTML = traductions.langues.FR.titreCookie;
+  texteCookie.innerHTML = traductions.langues.FR.texteCookie;
+  boutonCookie2.innerHTML = traductions.langues.FR.boutonCookie;
 }

@@ -1,26 +1,3 @@
-// Cookie bouton nop
-let boutonCookieNop = document.querySelector(".boutonCookie2");
-boutonCookieNop.addEventListener("click", obligerCookie);
-function obligerCookie() {
-  let boutonCookiePlease = (boutonCookieNop.innerText = "Please ?");
-}
-
-// boutonCookiePlease.addEventListener("click", gifCookie);
-// if boutonCookiePlease = (boutonCookieNop.innerText = "Please ?") {
-// function gifCookie() {
-//   boutonCookiePlease.innerText = "OKAY";
-// }
-// }
-
-// let nombreClics = 0;
-
-// function comptage() {
-//   nombreClics++;
-//   document.getElementById("nombreClics").textContent = nombreClics;
-// }
-
-// document.getElementById("boutonClic").addEventListener("click", comptage);
-
 // Cookie bouton accepter
 let cookieContainer = document.querySelector(".cookieContainer");
 let boutonCookie = document.querySelector(".boutonCookie");
@@ -51,3 +28,27 @@ animation.fromTo(
   { y: -20, yoyo: true, repeat: 3 },
   "<"
 );
+
+// Cookie boutons nop et please
+let boutonCookieNop = document.querySelector(".boutonCookie2");
+let boutonCookiePlease = document.querySelector(".boutonCookiePlease");
+let boutonCookieGif = document.querySelector(".boutonCookieGif");
+let divGif = document.querySelector(".gif");
+let cookie = document.querySelector(".cookie");
+
+boutonCookieNop.addEventListener("click", obligerCookie);
+
+function obligerCookie() {
+  boutonCookiePlease.classList.remove("hidden");
+  boutonCookieNop.classList.add("hidden");
+  boutonCookiePlease.innerText = "Please ?";
+}
+
+boutonCookiePlease.addEventListener("click", ApparitionGif);
+
+function ApparitionGif() {
+  divGif.classList.remove("hidden");
+  cookie.classList.add("hidden");
+  boutonCookiePlease.classList.add("hidden");
+  divGif.innerHTML = `<img class="gifComeOn" src="./images/come-on.gif" />`;
+}
