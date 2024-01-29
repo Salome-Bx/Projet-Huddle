@@ -68,14 +68,19 @@
 
   .bloc {
     flex-direction: column-reverse;
-    height: 80vh;
+    height: 100%;
     margin-bottom: 10%;
   }
 
   .blocReverse {
     flex-direction: column;
-    height: 80vh;
     margin-bottom: 10%;
+    height: 100%;
+  }
+
+  .bloc h2 {
+    padding-top: 4%;
+    padding-bottom: 4%;
   }
 
   .textBloc,
@@ -84,12 +89,16 @@
     text-align: center;
     padding-left: 0%;
     padding-right: 0%;
+    padding-top: 4%;
+    padding-bottom: 4%;
   }
 
   .imgBloc,
   .imgBlocReverse {
     width: 80%;
     padding-left: 0;
+    padding-bottom: 4%;
+    padding-top: 4%;
   }
 
   .blocButton {
